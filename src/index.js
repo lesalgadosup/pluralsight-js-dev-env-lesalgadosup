@@ -18,7 +18,7 @@ getUsers().then(result => {
 
     global.document.getElementById('users').innerHTML = usersBody;
 
-    const deleteLinks = global.document.getElementByClassName('deleteUser');
+    const deleteLinks = global.document.getElementsByClassName('deleteUser');
 
     //Must use array.from to create a real array from a DOM collection
     //getElementByClassname only returns an "array like" object
@@ -30,5 +30,5 @@ getUsers().then(result => {
         const row = element.parentNode.parentNode;
         row.parentNode.removeChild(row);
       };
-    });
+    })
 });

@@ -19,7 +19,7 @@ app.get('/',function(req, res){
     res.sendFile(path.join(__dirname,'../src/index.html')); //declared routing
 });
 
-app.get('/users', function(req,res){
+app.get('/users', function(req, res){
   // Hard coding for simplicy. Pretend this hits a real database
   res.json([
     {"id": 1,"firstName":"Bob","lastName":"Smith","email":"bob@gmail.com"},

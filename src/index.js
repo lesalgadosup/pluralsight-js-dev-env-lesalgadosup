@@ -2,7 +2,7 @@ import {getUsers} from './api/userApi';
 
 //Populate table of users via API call.
 getUsers().then(result => {
-  let userBody = "";
+  let usersBody = "";
 
   result.forEach(user => {
     usersBody+= `<tr>

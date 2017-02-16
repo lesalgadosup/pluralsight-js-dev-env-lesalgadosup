@@ -21,7 +21,7 @@ webpack(webpackConfig).run((err, stats) => {
 
   if(jsonStats.hasWarnings){
     console.log(chalk.yellow('Webpack generated the following warnings: '));
-    jsonStats.warnings.map(warnings => console.log(chalk.yellow(warning)));
+    jsonStats.warnings.map(warnings => console.log(chalk.yellow(warnings)));
   }
     console.log(`Webpack stats: ${stats}`);
 

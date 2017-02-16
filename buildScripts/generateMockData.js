@@ -4,7 +4,7 @@
   and rapid page loads due to local, static data.
 */
 
-/* es-lint-disable no-console */
+/* eslint-disable no-console */
 
 import jsf from 'json-schema-faker';
 import {schema} from './mockDataSchema';
